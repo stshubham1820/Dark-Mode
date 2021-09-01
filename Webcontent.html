@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Website Layout </title>
+        <meta charset="utf-8">
+        <meta name = "viewpoint"
+        content="width=device-width , initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            .header{
+                background-color: #1abc9c;
+                padding: 20px;
+                text-align: center;
+            }
+            .navbar{
+                overflow: hidden;
+                background-color: coral;
+                }
+            .navbar a{
+                text-decoration: none;
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 15px 15px;
+                color: cornsilk;
+            }
+            .navbar a:hover{
+                background-color: cornsilk;
+                color: black;
+            }
+            .column{
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+                text-align: center;
+            }
+            .row{
+                display: table;
+
+            }
+            .btn{
+                background-color: black;
+                color: cornsilk;
+                padding: 15px;
+                font-size: 12px;
+                border: none;
+                cursor: pointer;
+            }
+            .dropdown{
+                position: relative;
+                display:inline-block; 
+                left : 47.5%;
+                right: auto;         
+            }
+            .drp-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+                z-index: 1;
+            }
+            .drp-content a{
+                color: black;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+            }
+            .dropdown:hover .btn{
+                background-color:#1abc9c;
+                color:cornsilk;
+                
+            }
+            .dropdown:hover .drp-content{
+                display: block;
+            }
+            .drp-content a:hover{
+                background-color:  #1abc9c;
+            }
+            .col-1{
+                width: 25%;
+                float: left;
+                padding: 10px;
+                text-align: center;
+            }
+            .col-M{
+                width: 50%;
+                float: left;
+                padding: 10px;
+                margin-top: 75px;
+                text-align: center;
+            }
+            .img{
+                background-color: #aaa;
+                padding: 20px;
+                text-align: center;
+                margin-top: 15px;
+                width: 80%;
+            }
+            .card{
+                background-color: blanchedalmond;
+                padding: 20px;
+                margin: 30px;
+                text-align: center;
+            }
+            .card2{
+                background-color: blanchedalmond;
+                padding: 20px;
+                margin: 30px;
+            }
+            .row{
+                display: table;
+            }
+            .col-left{
+                float: left;
+                width: 75%;
+            }
+            .col-right{
+                float: left;
+                width: 25%;
+
+            }
+            .footer{
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+            .rec{
+                margin: 20px;
+                height: 300px;
+                width: 600px; 
+                background-color:#aaa;
+                left: 20%;
+                text-align: center;           
+                }
+            .colr{
+                float: right;
+                margin-right: 20px;
+            }
+            .colr button{
+                padding: 10px;
+                margin-top: 5%;
+            }
+            .white{
+                background-color: aliceblue;
+                border: none;
+                cursor: pointer;
+            }
+            .black{
+                background-color: black;
+                border: none;
+                cursor: pointer;
+                color: white;
+            }
+            body.active{
+                background-color: black;
+                color: white;
+            }
+            .card.active{
+                background-color: coral;
+            }
+            .card2.active{
+                background-color: coral;
+            }
+            .footer.active{
+                background-color: cornflowerblue;
+                color:white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <div class="colr">
+                <button class="white">Light Mode</button>
+                <button class="black">Dark Mode</button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="column">
+                <h2>
+                    Column 1
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="column">
+                <h2>
+                    Column 2
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="column">
+                <h2>
+                    Column 3
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn">Social Media</button>
+            <div class="drp-content">
+                <a href="#">FaceBook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>
+                    Column 1
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="col-M">
+                <h2>
+                    Column Main
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="col-1">
+                <h2>
+                    Column 1
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                    book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-left">
+                <div class="card">
+                    Blog content <br>
+                    Date : 06/07/2021
+                    <div class="img" style="height: 300px;">Image </div>
+                    <h4>Name :</h4>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                        book. It has survived not only five centuries, but also the leap into electronic 
+                        typesetting, remaining essentially unchanged
+                    </p>  
+                </div>
+                <div class = "rec">
+                    Rectangle
+                </div>
+            </div>
+            <div class=" col-right ">
+                <div class="card2">
+                    <h4>About</h4>
+                    <div class="img" style="height: 150px;">Image </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                    </p>
+                </div>
+                <div class="card2">
+                    <h4>Best Post</h4>
+                    <div class="img" style="height: 50px;">Image </div>
+                    <div class="img" style="height: 50px;">Image </div>
+                    <div class="img" style="height: 50px;">Image </div>
+                </div>
+            </div>
+        </div>
+        <div class = "footer">
+            <h2>Footer</h2>
+        </div>
+        <script>
+            const white = document.querySelector('.white');
+            const black = document.querySelector('.black');
+            const body = document.querySelector('body');
+            const card = document.querySelector('.card');
+            const col = document.querySelector('.card2');
+            const footer = document.querySelector('.footer');
+
+            black.onclick = function clr(){
+                body.classList.add('active');
+                card.classList.add('active');
+                col.classList.add('active');
+                footer.classList.add('active');
+            }
+            white.onclick = function clr2(){
+                body.classList.remove('active');
+                card.classList.add('active');
+                col.classList.remove('active');
+                footer.classList.remove('active');
+            }
+
+        </script>    
+    </body>
+</html>
